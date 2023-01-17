@@ -8,8 +8,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gruvbox"
-SOLARIZED_THEME="dark"
+ZSH_THEME="agnoster"
+#"mortalscumbag"
+#"macovsky"
+#SOLARIZED_THEME="dark"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -91,6 +93,16 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+# 
+# remove username and hostname
+prompt_context() {}
+
+#make lazygit function
+function lgit(){
+    git add .
+    git commit -a -m "$1"
+    git push 
+}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -99,11 +111,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Example aliases
 alias ipython='/usr/bin/ipython3'
-alias skole='cd ~/Documents/ntnu'
-alias spiderfoot='cd ~/Documents/CTF/tools/spiderfoot &&  python3 ./sf.py -l 127.0.0.1:5000'
-alias sherlock='cd ~/Documents/CTF/tools/sherlock/sherlock && python3 sherlock.py'
+alias obsidian='/bin/Obsidian-1.1.9.AppImage'
+alias vim=nvim
+alias vbox=VirtualBox
+alias brightness="xrandr --output eDP-1 --brightness $1"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-#attempted tmux gruvbox fix
-export TERM=xterm-256color
+source /home/tmod/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
