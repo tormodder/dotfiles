@@ -1,0 +1,86 @@
+[global_config]
+  focus = system
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+[keybindings]
+  go_next = <Alt>n
+  go_prev = <Alt>p
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  layout_launcher = <Alt>Left
+[profiles]
+  [[default]]
+    palette = "#2e3436:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#57e389:#eeeeec"
+  [[solarized-dark]]
+    background_color = "#002b36"
+    cursor_fg_color = "#002b36"
+    cursor_bg_color = "#839496"
+    foreground_color = "#839496"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    title_hide_sizetext = True
+  [[solarized-light]]
+    background_color = "#eee8d5"
+    foreground_color = "#002b36"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+  [[ambience]]
+    background_color = "#300a24"
+    foreground_color = "#ffffff"
+  [["neosolarized-dark "]]
+    background_color = "#002b36"
+    cursor_fg_color = "#002b36"
+    cursor_bg_color = "#839496"
+    foreground_color = "#839496"
+    show_titlebar = False
+    palette = "#073642:#dc322f:#859900:#b58900:#1a5fb4:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#ffbe6f:#fdf6e3"
+    title_hide_sizetext = True
+  [[solarized-dark exo]]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = solarized-dark
+    [[[window0]]]
+      type = Window
+      parent = ""
+      profile = solarized-dark
+  [[New Layout]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 12:12
+      maximised = False
+      fullscreen = False
+      size = 940, 1034
+      title = tmod@localhost:~
+      last_active_term = 6fd037a4-7984-4eb3-84ab-484111b57fff
+      last_active_window = False
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = solarized-dark
+      uuid = 6fd037a4-7984-4eb3-84ab-484111b57fff
+    [[[child2]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 12:12
+      maximised = False
+      fullscreen = False
+      size = 940, 1034
+      title = tmod@localhost:~
+      last_active_term = 4c36dd8f-e762-49a0-88a4-fc7d1f4c1fbf
+      last_active_window = True
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = solarized-dark
+      uuid = 4c36dd8f-e762-49a0-88a4-fc7d1f4c1fbf
+[plugins]
