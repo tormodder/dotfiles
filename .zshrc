@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Example aliases
 alias ipython='/usr/bin/ipython3'
-alias skole='cd ~/Documents/ntnu'
-alias spiderfoot='cd ~/Documents/CTF/tools/spiderfoot &&  python3 ./sf.py -l 127.0.0.1:5000'
-alias sherlock='cd ~/Documents/CTF/tools/sherlock/sherlock && python3 sherlock.py'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
